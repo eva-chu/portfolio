@@ -41,7 +41,6 @@ $(document).ready(function(){
 				runTypeWriter = false;
 				$("#bg-img").css("backgroundImage", "url(./img/cover/banner2.jpg)");
 				$("#bg-img").css("transition", "background-image 3s");
-				
 				$("#navbar").fadeIn(3000);
 				$("#headerH1").fadeIn(3000);
 				$("#headerH5").fadeIn(3000);
@@ -129,8 +128,7 @@ $(document).ready(function(){
 	function showHint(str) {
 		if (str.toLowerCase() === "hello world") {
 			$("#bg-img").css("backgroundImage", "url(./img/cover/banner2.jpg)");
-			$("#bg-img").css("transition", "background-image 3s");
-			
+			$("#bg-img").css("transition", "background-image 3s");			
 			$("header input").hide();  
 			$("#navbar").fadeIn(3000);
 			$("#headerH1").fadeIn(3000);
