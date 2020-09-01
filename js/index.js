@@ -39,10 +39,10 @@ $(document).ready(function(){
 				
 			$("#skipTypingButton").click(function(){
 				runTypeWriter = false;
-				$("#bg-img").css("backgroundImage", "url(./img/cover/banner2.jpg)");
-				$("#bg-img").css("transition", "background-image 3s");
-				$("body").css("background-image", "url(./img/cover/banner2.jpg)");
-				$("body").css("transition", "background-image 3s");
+				$("#headImg").attr("src", "./img/cover/banner2.jpg");
+				
+				$("#bodyImg").attr("src", "./img/cover/banner2.jpg");
+				
 				$("#navbar").fadeIn(3000);
 				$("#headerH1").fadeIn(3000);
 				$("#headerH5").fadeIn(3000);
@@ -129,10 +129,10 @@ $(document).ready(function(){
 	//after typing "Hello World"
 	function showHint(str) {
 		if (str.toLowerCase() === "hello world") {
-			$("#bg-img").css("backgroundImage", "url(./img/cover/banner2.jpg)");
-			$("#bg-img").css("transition", "background-image 3s");
-			$("body").css("background-image", "url(./img/cover/banner2.jpg)");
-			$("body").css("transition", "background-image 3s");
+			$("#headImg").attr("src", "./img/cover/banner2.jpg");
+				
+			$("#bodyImg").attr("src", "./img/cover/banner2.jpg");
+			
 			$("header input").hide();  
 			$("#navbar").fadeIn(3000);
 			$("#headerH1").fadeIn(3000);
