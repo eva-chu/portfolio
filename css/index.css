@@ -1,6 +1,3 @@
-html, body {
-	height: 100vh;
-}
 .container-fluid{
 	padding-right: 0;
 	padding-left: 0;
@@ -17,10 +14,11 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bolder;
 }
+
 body {
 	background-image: none;
 	background-position: center;
-	background-size: cover;
+    background-size: cover;
 	background-attachment: fixed;
 }
 #navbar {
@@ -46,7 +44,6 @@ body {
 	animation-duration: 0.5s;
 	animation-iteration-count: infinite;
 }
-
 #typingFront.cursor::after {
 	height: 20px;
 	width: 10.833px;
