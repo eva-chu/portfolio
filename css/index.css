@@ -239,6 +239,8 @@ h1, h2, h3, h4, h5, h6 {
 	display: none;
 }
 #form {
+	padding-top: 15vh;
+	padding-bottom: 15vh;
 	background-image: url("../img/form/background.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -248,15 +250,11 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1000px) {
 	#form {
 		background-attachment: scroll;
-		margin-top: 15vh;
-		margin-bottom: 15vh;
 	}
 }
 @media (min-width: 1000px) {
 	#form {
 		background-attachment: fixed;
-		padding-top: 15vh;
-		padding-bottom: 15vh;
 	}
 }
 input {
