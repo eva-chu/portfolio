@@ -15,20 +15,26 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bolder;
 }
 
-body {
-	background-image: none;
-	background-position: center;
-    background-size: cover;
-	background-attachment: fixed;
+#bodyImg {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	z-index: -999;
+	transform: translate(-50%, -50%);
+	height: 100%;
 }
 #navbar {
 	display: none;
 }
-#bg-img {
-	background-image: url("../img/cover/banner1.jpg");
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
+#headImg {
+	min-width: 100%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: -1;
+	transform: translate(-50%, -50%);
+	height: 100%;
 }
 .output {
 	color: white;
@@ -238,16 +244,19 @@ body {
 	display: none;
 }
 #form {
-	background-image: url('../img/form/background.jpg');
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-	filter: opacity(0.8);
-	background-color: rgba(255, 255, 255, 0.9);
 	padding-top: 15vh;
 	padding-bottom: 15vh;
-	color: rgb(80, 80, 80);
+	position: relative;
 }
+#formImg {
+	opacity: 0.8;
+	min-width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 100%;
+}	
 input {
 	background-color: rgba(0, 0, 0, 0);
 	border: none;
