@@ -192,10 +192,13 @@ body {
 	-webkit-transition: -webkit-filter 1s;
 }
 .achievementImg .before {
-	display: none;
+	opacity: 0;
+	height: 0;
 }
 .achievementImg:hover .before {
-	display: block;
+	opacity: 1;
+	height: auto;
+	transition: opacity 1s;
 	border: 1px solid #FAE6B1;
 	color: #FAE6B1;
 	position: absolute;
@@ -278,3 +281,4 @@ input {
 #goTop :hover{
     font-size: 40px;
 }
+
