@@ -23,12 +23,12 @@ h1, h2, h3, h4, h5, h6 {
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
-}@media (max-width: 1000px) {
+}@media (max-width: 1030px) {
 	#bg-img {
 		background-attachment: scroll;
 	}
 }
-@media (min-width: 1000px) {
+@media (min-width: 10030px) {
 	#bg-img {
 		background-attachment: fixed;
 	}
@@ -245,13 +245,13 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 	opacity: 0.8;	
 }	
-@media (max-width: 1000px) {
+@media (max-width: 1030px) {
 	#form {
 		background-attachment: scroll;
 		height: 150vh;
 	}
 }
-@media (min-width: 1000px) {
+@media (min-width: 1030px) {
 	#form {
 		background-attachment: fixed;
 		height: 100vh;
