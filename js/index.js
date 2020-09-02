@@ -179,7 +179,21 @@ $(document).ready(function(){
             $('#goTop').fadeOut();
         };
     });
-	  
+	
+	
+	//scroll to achievement section, img appear
+	$(window).scroll(function(){
+		if($(this).scrollTop() > $("header").height() + $("#preface").height() 
+			+ $("#equipment").height() - 100){
+			$(".achievementImg").css("visibility", "visible");
+			$(".achievementImg").addClass("animate__animated animate__rollIn");
+		}
+		if($(this).scrollTop() > $("body").height() - $(window).height() - 100){
+			$("#linkedIn, #e04").css("visibility", "visible");
+			$("#linkedIn, #e04").addClass("animate__animated animate__heartBeat");
+		}
+	})	
+	 
 	  
 	//achievement image change
 	$(".achievementImg").click(function(){
