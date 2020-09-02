@@ -1,6 +1,3 @@
-$(document).ready(function(){
-	
-	
 	// values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
 	var i = 0,
 		a = 0,
@@ -16,7 +13,6 @@ $(document).ready(function(){
 		"It disappointed me and kept me away from my dreams.",
 		"After getting into programming, I was completely taken with it.",
 		"It completes me, |so please let me complete your masterpiece.",
-		"Please Type 'Hello World' To Continue."
 	];
 
 	// Speed (in milliseconds) of typing.
@@ -125,7 +121,7 @@ $(document).ready(function(){
 
 
 	//after typing "Hello World"
-	function showHint(str) {
+	function enterPage(str) {
 		if (str.toLowerCase() === "hello world") {
 			$("#bg-img").css("backgroundImage", "url(./img/cover/banner2.jpg)");
 			$("#bg-img").css("transition", "background-image 3s");			
@@ -138,8 +134,9 @@ $(document).ready(function(){
 			$("#footerContent").fadeIn(3000);	
 		}
 	}
-		
-		
+
+
+$(document).ready(function(){	
 	//equipment filter
 	$(".filter").on("click", ".showAll", function(){
 		$(".equipment").hide();
@@ -174,11 +171,9 @@ $(document).ready(function(){
     });
     
 	
-    //scroll over 1000px, add animate; scroll over 400px, GoTop appear
+    //scroll over 1000px, add animate, GoTop appear
     $(window).scroll(function() {
-		if ( $(this).scrollTop() > 1000 && $(this).width() >= 576){
-            $('.achievementImg').addClass('animate__animated animate__rollIn');	
-        } else if ( $(this).scrollTop() > 400){
+		if ( $(this).scrollTop() > 400){
             $('#goTop').fadeIn();	
         } else {
             $('#goTop').fadeOut();
