@@ -197,7 +197,9 @@ $(document).ready(function(){
 	  
 	//achievement image change
 	$(".achievementImg").click(function(){
-		$(this).children(".after").fadeToggle();
-		$(this).children(".before").fadeToggle();
+		if($(this).children(".before").css("opacity") !== 0){
+			$(this).children(".before").hide();
+			$(this).children(".after").fadeIn();
+		}
 	})
 })
