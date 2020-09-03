@@ -189,8 +189,8 @@ $(document).ready(function(){
 			$(".achievementImg").addClass("animate__animated animate__rollIn");
 		}
 		if($(this).scrollTop() > $("body").height() - $(window).height() - 100){
-			$("#linkedIn, #e04").css("visibility", "visible");
-			$("#linkedIn, #e04").addClass("animate__animated animate__heartBeat");
+			$("#linkedIn, #cakeResume").css("visibility", "visible");
+			$("#linkedIn, #cakeResume").addClass("animate__animated animate__heartBeat");
 		}
 	})	
 	 
