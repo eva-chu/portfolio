@@ -253,7 +253,7 @@ input {
 	border: none;
 	border-bottom: 1px;
 }
-#linkedIn, #e04 {
+#linkedIn, #cakeResume {
 	opacity: 0.5;
 	visibility: hidden;
 }
@@ -261,7 +261,7 @@ input {
 	opacity: 1;
 	transition: opacity 0.5s;
 }
-#e04:hover {
+#cakeResume:hover {
 	opacity: 1;
 	transition: opacity 0.5s;
 }
